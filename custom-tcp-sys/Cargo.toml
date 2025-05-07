@@ -1,0 +1,8 @@
+[package]
+name = "custom-tcp-sys"
+edition = "2018"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.52.0"

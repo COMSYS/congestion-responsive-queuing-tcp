@@ -1,0 +1,23 @@
+[package]
+name = "custom-tcp"
+edition = "2018"
+
+[dependencies]
+custom-tcp-sys = { path = "./custom-tcp-sys" }
+chrono = { version = "0.4.9", features = ["serde"] }
+clap = "2.33.0"
+csv = "1.1.1"
+ctrlc = "3.1.3"
+env_logger = "0.7.1"
+failure = "0.1.8"
+futures = { version = "0.3.1", features = ["async-await"] }
+kib = "3.0.0"
+libc = "0.2.65"
+log = "0.4.8"
+mkdirp = "1.0.0"
+net2 = "0.2.39"
+serde = { version = "1.0.102", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["full"] }
+
+[workspace]
+members = ["custom-tcp-sys"]
